@@ -3,7 +3,7 @@
 ### 1. Cloner le repository
 
 ```
-https://github.com/EpitechMscProPromo2026/T-JSF-600-TLS_2.git
+https://github.com/Valamar12/IRC.git
 ```
 ## Backend 
 
