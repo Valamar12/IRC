@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Bebas+Neue');
+
+#root {
+    background-color: #ffffff;
+    font-family: Montserrat;
+    color: #1e1e1e;
+    display: flex;
+    height: 100vh;
+}
+
+h1,
+h2 {
+    font-family: Bebas Neue;
+    margin: 0;
+}
+
+.channel_list {
+    background-color: #ebd5ff;
+    padding: 10px 20px;
+    width: 20%;
+}
+
+.channel_list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.channel_list li {
+    padding-top: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channel_name {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 10px 20px;
+    height: 9vh;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messages_container ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 75vh;
+}
+
+.messages_container ol li {
+    padding-left: 20px;
+}
+
+.messages_container div p:first-child {
+    font-weight: bold;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.messages_container ol li:nth-child(odd) {
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.message_input {
+    padding: 20px 20px 30px 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form input[type=text] {
+    width: 100%;
+}
+
+form button,
+input[type=text] {
+    border-radius: 5px;
+    border: solid 2px #aeaeae;
+    height: 40px;
+}
+
+.add-channel {
+    background-color: #ebd5ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.channel-button {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel-input {
+    background: none;
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+.nick-form {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 10px;
+}
+
+.nickname-container {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    padding-left: 10px;
+    right: 85%;
+}
+
+.nickname {
+    display: block;
+    margin-bottom: 1px;
+}
+
+.nickname-change {
+    background: none;
+    border: none;
+    font-size: small;
+}
+
+.a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.user-list-container {
+    float: right;
+    margin-right: 20px;
+    display: block;
+    /* Initially show the user list */
+}
+
+.user-list-hidden {
+    display: none;
+    /* Hide the user list */
+}
+
+.user-list-container {
+    display: none;
+    /* Initially hide the user list */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-container.active {
+    display: block;
+    /* Show the user list when active */
+}
+
+.user-list-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-list-container button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
