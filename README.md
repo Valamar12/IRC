@@ -1,4 +1,4 @@
-# T-JSF-600-TLS_2
+# IRC
 
 ### 1. Cloner le repository
 
